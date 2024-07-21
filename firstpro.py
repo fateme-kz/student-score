@@ -21,5 +21,5 @@ def calculate_student():
         average_score = total_score/number
         print(f"average of this class is {average_score}")
     return average()
-
+print('--------------------------')
 calculate_student()
