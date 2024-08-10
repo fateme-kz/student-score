@@ -25,7 +25,7 @@
         }
 
         .card-details {
-            color: rgb(180, 180, 180);
+            color: rgb(18, 17, 17);
             height: 100%;
             gap: 1em;
             display: grid;
@@ -58,10 +58,13 @@
 <body>
     <div class="card">
         <div class="card-details">
-            <p class="text-title">Average of scores</p>
-            <p class="text-body">The Number</p>
+            <p class="text-title">Average of scores: {{ average }}</p>
+            <ul>
+                {% for name, score in zip(names, scores) %}
+                <li>{{ name }}: {{ score }}</li>
+                {% endfor %}
+            </ul>
         </div>
     </div>
-
 </body>
 </html>

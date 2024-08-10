@@ -96,14 +96,16 @@
 </head>
 <body>
     <div class="container">
-        <form id="number-form" method="POST" action="/call_score">
-        <div class="inputGroup">
-            <input type="text" id="studentName1" required autocomplete="off" > 
-            <label for="studentName1">Name of Student</label>
-        </div>
-            <label for="numberInput">the score</label>
-            <input type="number" id="numberInput" name="numberInput" required placeholder="1" min="1">
-            <button type="submit">Submit</button>
+        <form id="number-form" method="POST" action="/call_average">
+            {% for i in range(count) %}
+                <div class="inputGroup">
+                    <input type="text" id="name" required autocomplete="off" > 
+                    <label for="name_{{ i }}">Name of Student({{ i + 1 }})</label>
+                </div>
+                    <label for="score_{{ i }}">The Score</label>
+                    <input type="number" step="0.01" id="score_ ={{ i }}" name="score" required placeholder="1" min="1">
+            {% endfor %}        
+                    <button type="submit">Submit</button>
         </form>
     
     </div>
