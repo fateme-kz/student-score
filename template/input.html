@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input number</title>
+    <style>
+        body {
+            font-family: monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #e1e9f3;
+        }
+
+        .container {
+            text-align: center;
+            padding: 95px;
+            background-color: rgb(176, 205, 241);
+            border-radius: 20px;
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.381);
+        }
+
+        #number-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        input[type="number"] {
+            padding: 11px;
+            margin: 15px;
+            border: 2px solid #5395f1;
+            border-radius: 15px;
+            font-size: 16px;
+            width: 100%;
+            max-width: 200px;
+            box-shadow:5px 5px 5px rgba(0, 0, 0, 0.39)
+        }
+
+        button {
+            padding: 10px;
+            margin: 1px 0;
+            border: 2px solid white;
+            border-radius: 15px;
+            background-color: #5395f1;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: monospace;
+            width: 50%;
+            transition: background-color 0.3s ease-in-out;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39)
+        }
+
+        button:hover {
+            background-color: #3f51b5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form id="number-form" method="POST" action="/call_function">
+            <label for="input_number">how many students you have?</label>
+            <input type="number" name="input_number" required placeholder="1" min="1">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
