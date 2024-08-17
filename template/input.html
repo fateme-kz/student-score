@@ -67,7 +67,7 @@
 </head>
 <body>
     <div class="container">
-        <form id="number-form" method="POST" action="/call_function">
+        <form id="number-form"  action="{{ url_for('call_function') }}" method="POST">
             <label for="input_number">how many students you have?</label>
             <input type="number" name="input_number" required placeholder="1" min="1">
             <button type="submit">Submit</button>
