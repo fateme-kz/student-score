@@ -1,0 +1,464 @@
+{
+	"info": {
+		"_postman_id": "46b3ccc9-099e-491a-a09f-aed3e1f21ade",
+		"name": "student-score",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37622700"
+	},
+	"item": [
+		{
+			"name": "input",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "dethdere",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000"
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "Werkzeug/3.0.3 Python/3.12.4"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Aug 2024 11:00:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2089"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"UTF-8\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        <title>input number</title>\n        <style>\n        body {\n            font-family: monospace;\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            min-height: 100vh;\n            margin: 0;\n            background-color: #e1e9f3;\n        }\n\n        .container {\n            text-align: center;\n            padding: 95px;\n            background-color: rgb(176, 205, 241);\n            border-radius: 20px;\n            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.381);\n        }\n\n        #number-form {\n            display: flex;\n            flex-direction: column;\n            align-items: center;\n        }\n\n        label {\n            margin-bottom: 20px;\n            font-size: 16px;\n        }\n\n        input[type=\"number\"] {\n            padding: 11px;\n            margin: 15px;\n            border: 2px solid #5395f1;\n            border-radius: 15px;\n            font-size: 16px;\n            width: 100%;\n            max-width: 200px;\n            box-shadow:5px 5px 5px rgba(0, 0, 0, 0.39)\n        }\n\n        button {\n            padding: 10px;\n            margin: 1px 0;\n            border: 2px solid white;\n            border-radius: 15px;\n            background-color: #5395f1;\n            color: white;\n            cursor: pointer;\n            font-size: 16px;\n            font-family: monospace;\n            width: 50%;\n            transition: background-color 0.3s ease-in-out;\n            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.39)\n        }\n\n        button:hover {\n            background-color: #3f51b5;\n        }\n    </style>\n    </head>\n    <body>\n        <div class=\"container\">\n            <form id=\"number-form\" method=\"POST\" action=\"/call_function\">\n                <label for=\"input_number\">how many students you have?</label>\n                <input type=\"number\" name=\"input_number\" required placeholder=\"1\" min=\"1\">\n                <button type=\"submit\">Submit</button>\n            </form>\n        </div>\n    </body>"
+				}
+			]
+		},
+		{
+			"name": "input (post)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"score\": \"11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000"
+				}
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "score",
+									"value": "12",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000"
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "score (get)",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"count\": \"11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/call_function",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"call_function"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "score (get)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "input_number",
+									"value": "12",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/call_function",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"call_function"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "score (post)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": [
+				{
+					"name": "score (post)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "input_number",
+									"value": "23",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/call_function",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"call_function"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "average (get)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "show the database inpostman"
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/call_average",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"call_average"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "average (post)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"description": "calculate average and show the user"
+			},
+			"response": [
+				{
+					"name": "success",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "fateme",
+									"type": "text"
+								},
+								{
+									"key": "score",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "zahra",
+									"type": "text"
+								},
+								{
+									"key": "score",
+									"value": "14",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/call_average",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"call_average"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base url",
+			"value": "http://127.0.0.1:5000",
+			"type": "string"
+		}
+	]
+}

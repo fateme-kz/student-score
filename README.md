@@ -10,9 +10,13 @@
 ## Tech Stack:
 - python
 
+## Run the project:
+- At first use <build.bat> and after that use <run.bat> to run
+
 ## Installation:
 clone the repository:
 ```
 git clone https://github.com/username/personal-portfolio.git
 ```
 The address: `https://github.com/fateme-kz/student-score`
+

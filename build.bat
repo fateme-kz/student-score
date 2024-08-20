@@ -1,7 +1,4 @@
 @echo off
-REM Navigate to the directory where this script is located
-cd /d %~dp0
-
 REM Check if a virtual environment exists, and if not, create it
 if not exist venv (
     echo Creating virtual environment...
@@ -10,7 +7,7 @@ if not exist venv (
 
 REM Activate the virtual environment
 echo Activating virtual environment...
-call venv\Scripts\activate
+call .\venv\Scripts\activate
 
 REM Install Python dependencies from requirements.txt
 if exist requirements.txt (
@@ -22,4 +19,5 @@ if exist requirements.txt (
 
 REM Indicate that the build process is complete
 echo Build complete.
-pause
+
+@REM deactivate
